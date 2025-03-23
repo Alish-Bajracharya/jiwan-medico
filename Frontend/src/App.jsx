@@ -1,5 +1,8 @@
 import { Routes, Route, Navigate } from "react-router-dom";
+<<<<<<< HEAD
 
+=======
+>>>>>>> a88c31a (Frontend and admin panel complete)
 import { Suspense } from "react";
 import Home from './pages/Home.jsx';
 import Signin from './pages/Signin.jsx';
@@ -17,7 +20,10 @@ function App() {
     <div className="min-h-screen">
       <Suspense fallback={<div className="text-center mt-10">Loading...</div>}>
         <Routes>
+<<<<<<< HEAD
           
+=======
+>>>>>>> a88c31a (Frontend and admin panel complete)
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
           <Route path="/signin" element={<Signin />} />

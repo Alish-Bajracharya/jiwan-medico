@@ -6,6 +6,7 @@ const SignIn = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+<<<<<<< HEAD
   const handleSubmit = async (e) => {
     e.preventDefault();
   
@@ -30,6 +31,12 @@ const SignIn = () => {
     }
   };
   
+=======
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle sign-in logic here
+  };
+>>>>>>> a88c31a (Frontend and admin panel complete)
 
   return (
     <main className="flex items-center justify-center min-h-screen bg-gray-100">

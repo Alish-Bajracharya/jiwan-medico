@@ -8,6 +8,7 @@
   },
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.7",
@@ -19,4 +20,10 @@
   },
   "keywords": [],
   "description": ""
+=======
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+>>>>>>> a88c31a (Frontend and admin panel complete)
 }

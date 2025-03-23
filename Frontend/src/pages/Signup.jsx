@@ -17,6 +17,7 @@ const Signup = () => {
     }));
   };
 
+<<<<<<< HEAD
   const handleSubmit = async (e) => {
     e.preventDefault();
   
@@ -38,6 +39,12 @@ const Signup = () => {
     }
   };
   
+=======
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+  };
+>>>>>>> a88c31a (Frontend and admin panel complete)
 
   const handleSignInClick = () => {
     console.log("Navigate to sign in");

@@ -6,10 +6,30 @@ const SignIn = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle sign-in logic here
+  
+    try {
+      const response = await fetch("http://localhost:5000/api/auth/signin", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password }),
+        credentials: "include",
+      });
+  
+      const data = await response.json();
+      if (response.ok) {
+        localStorage.setItem("token", data.token);
+        localStorage.setItem("role", data.role);
+        alert("Login Successful!");
+      } else {
+        alert(data.error);
+      }
+    } catch (error) {
+      console.error("Login Error:", error);
+    }
   };
+  
 
   return (
     <main className="flex items-center justify-center min-h-screen bg-gray-100">

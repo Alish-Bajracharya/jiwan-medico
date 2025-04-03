@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
+
 import { Suspense } from "react";
 import Home from './pages/Home.jsx';
 import Signin from './pages/Signin.jsx';
@@ -16,6 +17,7 @@ function App() {
     <div className="min-h-screen">
       <Suspense fallback={<div className="text-center mt-10">Loading...</div>}>
         <Routes>
+          
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
           <Route path="/signin" element={<Signin />} />
